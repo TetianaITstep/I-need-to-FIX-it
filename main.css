@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --violet: #8899cc;
+  --red: #fb3b2d;
+  --yellow: #ffaf00;
+  --pink-background: #faedd4;
+  --black: #28292b;
+}
+
+body {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 0.9fr 0.1fr;
+  background-color: var(--pink-background);
+  overflow-x: hidden;
+}
+
+.main {
+  width: 100%;
+}
+
+.menu {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100%;
+  align-items: flex-end;
+}
+
+.menu_list {
+  display: flex;
+}
+
+.menu_list li {
+  font-size: 25px;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  padding: 400px 20px;
+  cursor: pointer;
+  display: inline-block;
+  background-color: #fc564a;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.menu_list li:nth-child(1) {
+  background-color: var(--violet);
+}
+
+.menu_list li:nth-child(2) {
+  background-color: var(--yellow);
+}
+
+.menu_list li:nth-child(3) {
+  background-color: var(--red);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 45px;
+}
+
+.nav img {
+  height: 40px;
+}
+
+.en,
+.ua,
+.fr {
+  color: var(--red);
+  border: 1px solid var(--red);
+  border-radius: 10px;
+  background-color: #faedd4;
+  padding: 2px;
+  cursor: pointer !important;
+}
+
+.nav div {
+  display: flex;
+  gap: 10px;
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 10px;
+}
+
+.nav ul li {
+  color: var(--red);
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.banner {
+  background-color: var(--red);
+}
+
+.banner_info {
+  font-size: 35px;
+  color: var(--pink-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 71px 28px;
+}
+
+.banner_buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  padding-bottom: 30px;
+}
+
+.button_info_1,
+.button_info_2 {
+  font-size: 20px;
+  background-color: var(--pink-background);
+  color: var(--red);
+  padding: 4px 21px;
+  border: 1px solid var(--pink-background);
+  cursor: pointer;
+}
+
+.line {
+  background-color: var(--red);
+  width: 100%;
+  padding: 1px;
+  margin-bottom: 2px;
+  margin-top: 20px;
+}
+
+.line_botton {
+  background-color: var(--red);
+  width: 100%;
+  padding: 1px;
+  margin-bottom: 2px;
+  margin-top: 2px;
+}
+
+.main_info_container {
+  margin-top: 2px;
+  color: var(--red);
+  display: grid;
+  grid-auto-flow: row dense;
+  grid-auto-rows: 1fr 1fr;
+  grid-template-columns: 1fr 0.9fr;
+}
+
+.best_food {
+  border-right: 2px solid var(--red);
+  border-top: 2px solid var(--red);
+}
+
+.img_container {
+  display: flex;
+  justify-content: flex-end;
+  border-top: 2px solid var(--red);
+}
+
+.best_food_text {
+  font-size: 65px;
+  padding: 180px 0px 20px 50px;
+}
+
+.best_food_descr_text {
+  font-size: 22px;
+  padding: 40px 0px 40px 50px;
+}
+
+.best_food_descr {
+  border-top: 2px solid var(--red);
+  border-bottom: 2px solid var(--red);
+}
+
+.best_food_discover {
+  border-bottom: 2px solid var(--red);
+  cursor: pointer;
+}
+
+.best_food_discover p {
+  padding: 25px 176px;
+  background-color: var(--red);
+  color: var(--pink-background);
+  font-size: 37px;
+  white-space: nowrap;
+  margin-top: 2px;
+}
+
+.big_img {
+  margin-top: 2px;
+}
+
+.bitesize {
+  width: 100%;
+  border-top: 2px solid var(--red);
+  border-bottom: 2px solid var(--red);
+  font-size: 55px;
+}
+
+.bitesize p {
+  padding: 19px 780px 35px 50px;
+  white-space: nowrap;
+  color: var (--red);
+}
+
+.different_dishes {
+  display: grid;
+  grid-template-columns: 1fr 0.9fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-auto-rows: 1fr 1fr;
+  gap: 14px 12px;
+  padding-left: 50px;
+}
+
+.dish_type {
+  justify-self: center;
+  padding-top: 56px;
+  padding-bottom: 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dish_type img {
+  padding-bottom: 40px;
+}
+
+.dish_type p {
+  font-size: 30px;
+  color: var(--red);
+}
+
+.geo_list {
+  background-color: var(--red);
+  width: 100%;
+}
+
+.list_items {
+  font-size: 40px;
+  color: var(--pink-background);
+  display: flex;
+  justify-content: center;
+  gap: 90px;
+  padding: 20px 45px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: var(--red);
+  font-weight: 500;
+  padding: 50px 70px;
+  font-size: 20px;
+}
+
+.footer_list li {
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.footer_list li:hover {
+  transform: scale(1.15);
+}
